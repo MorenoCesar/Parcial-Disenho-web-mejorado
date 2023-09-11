@@ -1,6 +1,6 @@
 :root{
-    --headercolor: #122d46;
-    --maincolor: #156499;
+    --headercolor: #001449;
+    --maincolor: #012677;
     --footercolor: #120907;
 }
 
@@ -13,6 +13,12 @@
 html{
     font-size: 62.5%;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: white;
 }
 
 header{
@@ -40,29 +46,35 @@ header .links{
 }
 
 header .links li{
+    padding-bottom: 3px;
     margin-left: 50px;
     list-style: none;
     cursor: pointer;
-    color: white;
     text-align: center;
 }
 
-header button{
+header .links li:hover{
+    border-bottom: solid white;
+    padding: 0%;
+    transition: .13s;
+}
+
+header .button{
     margin: 0 20px;
-    background-color:transparent;
-    color: white;
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 35px;
     width: 100px;
     border-radius: 5px;
     cursor: pointer;
     box-shadow: none;
-    transition: .4s;
 }
 
-header button:hover{
-    background-color: #005499;
-    color: white;
-    transition: .4s;
+header .button:hover{
+    border: solid white;
+    transition: .1s;
 }
 
 main{
@@ -73,11 +85,11 @@ main{
 }
 
 main .about-us{
-    display: flex;   
+    display: flex;
 }
 
 main .about-us p{
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 main .about-us img{
